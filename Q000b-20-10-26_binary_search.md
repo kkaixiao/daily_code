@@ -74,3 +74,4 @@ if __name__ == '__main__':
  if __name__ == '__main__':
     lst = [2, 5, 3, 8, 22, 17, 30, 1, 4, 100, 35, 72, 9, 6]
     print(binary_search_ite2(sorted(lst), 30))
+```
