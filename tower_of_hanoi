@@ -1,6 +1,6 @@
 Question: https://en.wikipedia.org/wiki/Tower_of_Hanoi
 
-```
+```python3
 def hanoi_tower(n, rod_from, rod_middle, rod_to):
     if n == 1: # when n-1 plates are in the final rod
         print('Plate 1 from {} to {}'.format(rod_from, rod_to))
