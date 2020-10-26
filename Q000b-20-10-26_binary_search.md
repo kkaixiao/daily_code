@@ -53,7 +53,7 @@ if __name__ == '__main__':
 ```
 
  ** We can use the while .. else statement to avoid the use of 'found' variable **
- ```ptyhon 3
+ ```ptyhon3
  def binary_search_ite2(arr, item):
     sorted_arr = sorted(arr)
     left, right = 0, len(arr)-1
