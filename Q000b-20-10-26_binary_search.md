@@ -51,3 +51,26 @@ if __name__ == '__main__':
     lst = [2, 5, 3, 8, 22, 17, 30, 1, 4, 100, 35, 72, 9, 6]
     print(binary_search_ite(sorted(lst), 30))
 ```
+
+ ** We can use the while .. else statement to avoid the use of 'found' variable **
+ ```ptyhon 3
+ def binary_search_ite2(arr, item):
+    sorted_arr = sorted(arr)
+    left, right = 0, len(arr)-1
+    middle = len(arr)//2
+    while right > left:
+        if sorted_arr[middle] == item:
+            return arr.index(sorted_arr[middle])
+        elif sorted_arr[middle] > item:
+            right = middle -1
+        elif sorted_arr[middle] < item:
+            left = middle + 1
+            
+        middle = (left + right) // 2
+    
+    else:
+        return -1
+        
+ if __name__ == '__main__':
+    lst = [2, 5, 3, 8, 22, 17, 30, 1, 4, 100, 35, 72, 9, 6]
+    print(binary_search_ite2(sorted(lst), 30))
