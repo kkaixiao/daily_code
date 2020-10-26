@@ -1,7 +1,7 @@
 **Question: return index of an item in an array, if not found, return -1**
 
 
-** Solution using recursion **
+**Solution using recursion**
 ```python3
 def binary_search_rec(arr, item, left = 0, right = 1):
     if right < left:
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     print(lst[binary_search(sorted(lst), 30, 0, len(lst)-1)])
 ```
   
- ** Solution using iteration **
+ **Solution using iteration**
  
  ```python3
  def binary_search_ite(arr, item):
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     print(binary_search_ite(sorted(lst), 30))
 ```
 
- ** We can use the while .. else statement to avoid the use of 'found' variable **
+ **We can use the while .. else statement to avoid the use of 'found' variable**
 ```python3
  def binary_search_ite2(arr, item):
     sorted_arr = sorted(arr)
