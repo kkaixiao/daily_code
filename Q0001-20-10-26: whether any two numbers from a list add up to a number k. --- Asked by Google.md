@@ -24,7 +24,7 @@ def two_sum(lst, k):
   return False
 ```
 
-This would take O(N2). Another way is to use a set to remember the numbers we've seen so far. Then for a given number, we can check if there is another number that, if added, would sum to k. This would be O(N) since lookups of sets are O(1) each.
+This would take O(N<sup>2</sup>). Another way is to use a set to remember the numbers we've seen so far. Then for a given number, we can check if there is another number that, if added, would sum to k. This would be O(N) since lookups of sets are O(1) each.
 
 
 ```python3
