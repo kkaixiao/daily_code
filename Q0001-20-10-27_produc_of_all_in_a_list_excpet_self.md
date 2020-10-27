@@ -9,6 +9,7 @@ Follow-up: what if you can't use division?
 Kai's solutions:
 ```python3
 # solution with the use of division
+
 def product_all_except_self(l):
     res = []
     all_prod = 1
@@ -19,7 +20,9 @@ def product_all_except_self(l):
     return res
     
     
-# solution with the use of division, we can create a product function to replace numpy's prod method, I am just lazy here
+# solution with the use of division, we can create a product function to replace numpy's prod method
+# but I am just lazy here...
+
 import numpy as np
 
 def product_all_except_self_withou_division(l):
