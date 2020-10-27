@@ -19,7 +19,7 @@ def product_all_except_self(l):
     return res
     
     
-# solution with the use of division
+# solution with the use of division, we can create a product function to replace numpy's prod method, I am just lazy here
 import numpy as np
 
 def product_all_except_self_withou_division(l):
