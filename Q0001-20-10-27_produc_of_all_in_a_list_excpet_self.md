@@ -25,13 +25,13 @@ import numpy as np
 def product_all_except_self_withou_division(l):
     res = []
     for i, num in enumerate(l):
-        left_portion = np.prod(l[:i])
-        if left_portion == 0:
-            left_portion = 1
-        right_portion = np.prod(l[i+1:])
-        if right_portion == 0:
-            right_portion = 1
-        res.append(int(left_portion*right_portion))
-    return res    
+        left_product = np.prod(l[:i])
+        if left_product == 0 or len(l[:i]) == 0:
+            left_product = 1
+        right_product = np.prod(l[i+1:])
+        if right_product == 0 or len(l[i+1:]) == 0:
+            right_product = 1
+        res.append(int(left_product*right_product))
+    return res
 ```
         
