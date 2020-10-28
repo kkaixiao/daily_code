@@ -40,7 +40,8 @@ def product_all_except_self_withou_division(l):
         res.append(int(left_product*right_product))
     return res
 ```
-**Solution**
+**Experts' Solution:**
+
 This problem would be easy with division: an optimal solution could just find the product of all numbers in the array and then divide by each of the numbers.
 
 Without division, another approach would be to first see that the i<sup>th</sup> element simply needs the product of numbers before i and the product of numbers after i. Then we could multiply those two numbers to get our desired product.
@@ -48,7 +49,7 @@ Without division, another approach would be to first see that the i<sup>th</sup>
 In order to find the product of numbers before i, we can generate a list of prefix products. Specifically, the i<sup>th</sup> element in the list would be a product of all numbers including i. Similarly, we would generate the list of suffix products.
 
 ```python3
-ef products(nums):
+def products(nums):
     # Generate prefix products
     prefix_products = []
     for num in nums:
@@ -76,5 +77,8 @@ ef products(nums):
         else:
             result.append(prefix_products[i - 1] * suffix_products[i + 1])
     return result
-    ```
-    This runs in O(N) time and space, since iterating over the input arrays takes O(N) time and creating the prefix and suffix arrays take up O(N) space.
+    
+        
+```
+    
+This runs in O(N) time and space, since iterating over the input arrays takes O(N) time and creating the prefix and suffix arrays take up O(N) space.
