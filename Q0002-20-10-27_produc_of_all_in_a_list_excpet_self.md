@@ -16,7 +16,10 @@ def product_all_except_self(l):
     for num in l:
         all_prod *= num
     for n in l:
-        res.append(int(all_prod/n))
+        if n:
+            res.append(int(all_prod/n))
+        else:
+            res.append(all_prod)
     return res
     
     
