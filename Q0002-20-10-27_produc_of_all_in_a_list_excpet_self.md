@@ -11,15 +11,14 @@ Follow-up: what if you can't use division?
 # solution with the use of division
 
 def product_all_except_self(l):
+    # one assumption of this solution is that no '0' is in the list l
     res = []
     all_prod = 1
     for num in l:
         all_prod *= num
+        
     for n in l:
-        if n != 0:
-            res.append(int(all_prod/n))
-        else:
-            res.append(all_prod)
+        res.append(int(all_prod/n))
     return res
     
     
