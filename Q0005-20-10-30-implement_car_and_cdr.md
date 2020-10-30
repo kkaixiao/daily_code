@@ -14,3 +14,18 @@ def cons(a, b):
     
     
 Implement ```car``` and ```cdr```.
+
+
+Kai's Solution
+
+```python3
+def car(pair):
+    def return_a(a, b):
+        return a
+    return pair(return_a)
+
+def cdr(pair):
+    def return_b(a, b):
+        return b
+    return pair(return_b)
+```
