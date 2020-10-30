@@ -15,8 +15,8 @@ def cons(a, b):
     
 Implement ```car``` and ```cdr```.
 
-
-Kai's Solution
+-------
+**Kai's Solution:**
 
 ```python3
 def car(pair):
